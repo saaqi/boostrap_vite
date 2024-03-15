@@ -11,5 +11,11 @@ export default defineConfig({
   },
   build: {
     outDir: "./docs",
+    minify: 'terser',
+    terserOptions: {
+      format: {
+        comments: false,
+      },
+    },
   },
 });
